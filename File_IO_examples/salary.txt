@@ -1,0 +1,4 @@
+Akash, 3000
+Aparna,2000
+Vibha, 5000
+Anay, 50000

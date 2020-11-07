@@ -1,0 +1,4 @@
+Akash has salary of  3000
+Aparna has salary of 2000
+Vibha has salary of  5000
+Anay has salary of  50000
