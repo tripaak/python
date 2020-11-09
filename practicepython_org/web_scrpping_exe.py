@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 
-base_url = 'http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture'
+base_url = 'https://www.top500.org/lists/top500/2020/06/'
 
 r = requests.get(base_url)
 
@@ -22,4 +22,17 @@ soup = BeautifulSoup(htmlContent, 'html.parser')
 
 # print(soup.find('p'))
 
+# print(soup.find_all('p',class_='star-rating Four'))
 
+# print(soup.prettify)
+
+# print(soup.body.findAll(text='Soumission'))  # to find text in soup
+
+# print(soup.find_all('tr'))
+
+# title = soup.title
+# print(title)
+
+# print(soup.find_all('tr'))
+
+       
