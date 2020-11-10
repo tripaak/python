@@ -25,20 +25,19 @@ for tr in soup.find_all('tr'):
     data = []
     for th in tr.find_all('th'):
         data.append(th.text)
-        # print(data)
     if data:
-        print("Inserting headers : {}".format(','.join(data)))
+        # print("Inserting headers : {}".format(','.join(data)))
         csv_writer.writerow(data)
         continue 
 
     for td in tr.find_all("td"):
+        # print(td.a)
         if td.a:
             data.append(td.a.text.strip())
         else:
             data.append(td.text.strip())
-    print(data)        
+    # print(data)        
     if data:
-        print("Inserting data: {}".format(','.join(data)))
+        # print("Inserting data: {}".format(','.join(data)))
         csv_writer.writerow(data)
         # print(tr.text.strip())
-    
