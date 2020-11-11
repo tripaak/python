@@ -5,6 +5,8 @@
 # # output list [1**3, 8, 27]
 # # Use list comprehension
 
+# args can take any number of varibales 
+
 def to_power(num, *args):
     print(num)
     print(args)

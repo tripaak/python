@@ -1,4 +1,5 @@
 
+# kwargs takes dictionary
 
 def func(*args, **kwargs):
     output_list = []
