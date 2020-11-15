@@ -7,6 +7,6 @@ def is_even(n):
 
 is_even2 = lambda n : n%2 == 0
 
-print(is_even(5))
+# print(is_even(5))
 
-print(is_even2(5))
+print(is_even2(4))
