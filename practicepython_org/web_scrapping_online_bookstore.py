@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 base_url= "http://books.toscrape.com/"
 
 r = requests.get(base_url)
+# r = requests.request
 
 htmlContent = r.content
 
