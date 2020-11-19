@@ -12,13 +12,14 @@ def factorial_finder(num):
 
 def trainlingZeros(num):
     count = 0
-    print("in trailing zeros function ")
-    print(num%10)
+    # print("in trailing zeros function ")
+    # print(num%10)
     while(num%10 == 0):
-        print("in while loop")
-        print(num)
-        num = num / 10 
+        # print("in while loop")
+        # print(num)
         count = count + 1
+        num = num / 10 
+        # print(num)
     return count
 
 
