@@ -9,7 +9,8 @@ import re
 #   (66.90%); freememory-tenured=643505736 (613M 711k 584 bytes) 
 #   (39.95%);. Metrics [name=free_memory, value=1070; name=free_tenuredgen_memory, value=613; ]."
 
-#           "(?P<timestamp>\d{2}:\d{2}:\d{2}.\d{3}).*freememory-heap=(?P<frequency_heap>\d+).*freememory-young=(?P<frequency_young>\d+).*freememory-tenured=(?P<frequency_tenured>\d+)"
+#"(?P<timestamp>\d{2}:\d{2}:\d{2}.\d{3}).*freememory-heap=(?P<frequency_heap>\d+).*freememory-young=(?P<frequency_young>\d+).
+# *freememory-tenured=(?P<frequency_tenured>\d+)"
 
 #Timestamp ==2020/04/21 00:00:10.977 +0200
 #back server = back1
@@ -27,19 +28,12 @@ def parser():
                 r"freememory-heap=(?P<frequency_heap>\d+).*" \
                 r"freememory-young=(?P<frequency_young>\d+).*" \
                 r"freememory-tenured=(?P<frequency_tenured>\d+)"
-
             for line in input_file:
                 if Tag in line:
                     find_values = re.findall(regex,line)
                     csv_writer.writerow(list(find_values[0]))
 
-
-
-            
-
-
-
-
+     
 
 
 if __name__ == "__main__":
